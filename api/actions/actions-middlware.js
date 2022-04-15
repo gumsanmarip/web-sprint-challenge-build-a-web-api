@@ -19,7 +19,7 @@ const requiredBody = (req, res, next) =>{
         req.action = req.body;
         next();
     } else {
-        res.status(400).json({ message: 'request body is required!' });
+        res.status(400).json({ message: 'request body required' });
     }
 }
 
